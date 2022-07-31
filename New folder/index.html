@@ -6,34 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>To do app</title>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-    rel="stylesheet"
-  />
 </head>
 <body>
-  <div class="container">
-    <div class="todo">
-      <h1>To Do</h1>
-      <p>What do you want to get done today?</p>
-      <form id="form">
-        <input type="text" id="input" placeholder="Enter task" onclick="addTodo()" />
-      </form>
-    </div>
-
-    <div class="list-todo">
-      <ul id="todo"></ul>
-    </div>
-  </div>
-
-
-
-
-
-
-    
-
-
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Task...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      <ul id="myUL">
+      </ul>
     <script src="app.js"></script>
 </body>
 </html>
